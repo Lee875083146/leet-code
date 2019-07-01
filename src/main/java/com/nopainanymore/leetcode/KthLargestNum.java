@@ -12,7 +12,7 @@ public class KthLargestNum {
 
     private final int k;
 
-    public KthLargestNum(int k, int a[]) {
+    private KthLargestNum(int k, int a[]) {
         this.priorityQueue = new PriorityQueue<>(k);
         this.k = k;
         for (int i : a) {
