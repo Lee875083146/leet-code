@@ -11,7 +11,7 @@ import java.util.HashMap;
  */
 public class TwoSum {
 
-    private static int[] solution(int nums[], int target) {
+    private static int[] solution(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             if (map.containsKey(target - nums[i])) {
@@ -21,6 +21,13 @@ public class TwoSum {
             }
         }
         return null;
+    }
+
+    public static void main(String[] args) {
+        int[] a = {1, 2, 3, 51, 3};
+        for (int i : solution(a, 4)) {
+            System.out.println(i);
+        }
     }
 
 }
