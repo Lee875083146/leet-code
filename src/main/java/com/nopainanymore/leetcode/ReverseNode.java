@@ -19,6 +19,9 @@ public class ReverseNode {
     }
 
     private static Node reverse(Node head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
         Node pre = null;
         Node cur = head;
         while (cur != null) {
