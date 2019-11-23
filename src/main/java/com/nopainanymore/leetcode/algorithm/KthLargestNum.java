@@ -1,4 +1,4 @@
-package com.nopainanymore.leetcode;
+package com.nopainanymore.leetcode.algorithm;
 
 import java.util.PriorityQueue;
 
